@@ -1,0 +1,156 @@
+﻿<Window x:Class="DI_UD3_12.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DI_UD3_12"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <!--
+    <StackPanel Margin="10">
+        <Label FontWeight="Bold" FontSize="20">¿Eres feliz?</Label>
+        <RadioButton VerticalContentAlignment="Center" Margin="5">
+            <WrapPanel>
+                <Rectangle Fill="Green" Width="16" Height="16"/>
+                <TextBlock Text="Sí" FontSize="20" Margin="5"/>
+            </WrapPanel>
+        </RadioButton>
+        <RadioButton VerticalContentAlignment="Center" Margin="5" Checked="No_Seleccionado">
+            <WrapPanel>
+                <Rectangle Fill="Red" Width="16" Height="16"/>
+                <TextBlock Text="No" FontSize="20" Margin="5"/>
+            </WrapPanel>
+        </RadioButton>
+        <RadioButton VerticalContentAlignment="Center" Margin="5">
+            <WrapPanel>
+                <Rectangle Fill="Blue" Width="16" Height="16"/>
+                <TextBlock Text="Quizás" FontSize="20" Margin="5"/>
+            </WrapPanel>
+        </RadioButton>
+    </StackPanel>-->
+    <!--
+    <StackPanel Margin="10">
+        <Label FontWeight="Bold">Are you ready?</Label>
+        <RadioButton GroupName="ready">Yes</RadioButton>
+        <RadioButton GroupName="ready">No</RadioButton>
+        <RadioButton GroupName="ready" IsChecked="True">Maybe</RadioButton>
+        <Label FontWeight="Bold">Male or female?</Label>
+        <RadioButton GroupName="sex">Male</RadioButton>
+        <RadioButton GroupName="sex">Female</RadioButton>
+        <RadioButton GroupName="sex" IsChecked="True">Not sure</RadioButton>
+    </StackPanel>-->
+
+    <!--
+    <StackPanel Margin="10">
+        <Label FontWeight="Bold">Are you ready?</Label>
+        <RadioButton>
+            <WrapPanel>
+                <Image Source="/aceptar.png" Width="16" Height="16" Margin="0,0,5,0" />
+                <TextBlock Text="Yes" Foreground="Green" />
+            </WrapPanel>
+        </RadioButton>
+        <RadioButton Margin="0,5">
+            <WrapPanel>
+                <Image Source="/rechazar.png" Width="16" Height="16" Margin="0,0,5,0" />
+                <TextBlock Text="No" Foreground="Red" />
+            </WrapPanel>
+        </RadioButton>
+        <RadioButton IsChecked="True">
+            <WrapPanel>
+                <Image Source="/interrogacion_naranja.jpg" Width="16" Height="16" Margin="0,0,5,0" />
+                <TextBlock Text="Maybe" Foreground="Gray" />
+            </WrapPanel>
+        </RadioButton>
+    </StackPanel>-->
+    
+<!--
+    <StackPanel Margin="10">
+        <Label>Text: </Label>
+        <TextBox Width="200" HorizontalAlignment="Left" Margin="10,0,0,0"/>
+        <Label>Password:</Label>
+        <PasswordBox Width="200" HorizontalAlignment="Left" Margin="10,0,0,0"/>
+
+    </StackPanel>-->
+
+    <!--
+    <Grid>
+        <Button Height="100" Width="200" Content="Hola Mundo" Background="PaleVioletRed" Margin="300,162,300,172">
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="FontSize" Value="30" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+    </Grid>-->
+    <!-- EJERCICIO 1
+    <StackPanel Margin="20">
+        <Label FontSize="16" FontWeight="Bold">¿Cuál es la capital de Francia?</Label>
+        <RadioButton Name="Option1" Content="Madrid" GroupName="Answers" />
+        <RadioButton Name="Option2" Content="París" GroupName="Answers" />
+        <RadioButton Name="Option3" Content="Roma" GroupName="Answers" />
+        <RadioButton Name="Option4" Content="Berlín" GroupName="Answers" />
+        <Button Content="Corregir" Click="CorrectButton_Click" Margin="0,10" />
+        <Label Name="AttemptsLabel" FontSize="12" />
+    </StackPanel>-->
+
+    <!-- EJERCICIO 2
+    <StackPanel Margin="20">
+        <Label FontSize="16" FontWeight="Bold">¿Cuál es la capital de Francia?</Label>
+        <RadioButton>
+            <StackPanel Orientation="Horizontal">
+                <Image Source="madrid.png" Width="20" Height="20" />
+                <TextBlock Text="Madrid" Margin="10,0" />
+            </StackPanel>
+        </RadioButton>
+        <RadioButton>
+            <StackPanel Orientation="Horizontal">
+                <Image Source="paris.png" Width="20" Height="20" />
+                <TextBlock Text="París" Margin="10,0" />
+            </StackPanel>
+        </RadioButton>
+        <RadioButton>
+            <StackPanel Orientation="Horizontal">
+                <Image Source="roma.png" Width="20" Height="20" />
+                <TextBlock Text="Roma" Margin="10,0" />
+            </StackPanel>
+        </RadioButton>
+        <RadioButton>
+            <StackPanel Orientation="Horizontal">
+                <Image Source="berlin.png" Width="20" Height="20" />
+                <TextBlock Text="Berlín" Margin="10,0" />
+            </StackPanel>
+        </RadioButton>
+    </StackPanel>-->
+    <!--EJERCICIO 3
+    <StackPanel Margin="20">
+        <Label Content="Usuario:" />
+        <TextBox Name="UsernameBox" />
+        <Label Content="Contraseña:" />
+        <PasswordBox Name="PasswordBox" MaxLength="8" />
+        <Button Content="Iniciar Sesión" Click="LoginButton_Click" Margin="0,10" />
+    </StackPanel>-->
+
+
+    <!-- EJERCICIO 4
+    <StackPanel Margin="20">
+        <Label FontSize="16" FontWeight="Bold">Seleccione el nivel de seguridad:</Label>
+        <RadioButton Name="LowSecurity" Content="Bajo" GroupName="SecurityLevel" />
+        <RadioButton Name="MediumSecurity" Content="Medio" GroupName="SecurityLevel" />
+        <RadioButton Name="HighSecurity" Content="Alto" GroupName="SecurityLevel" />
+        <PasswordBox Name="PasswordBox" MaxLength="20" Margin="0,10" />
+        <Button Content="Validar" Click="ValidateButton_Click" />
+    </StackPanel>-->
+    <!-- EJERCICIO 5
+    <StackPanel Margin="20">
+        <Label FontSize="16" FontWeight="Bold">Seleccione el método de pago:</Label>
+        <RadioButton Name="CreditCard" Content="Tarjeta de Crédito" GroupName="PaymentMethod" />
+        <RadioButton Name="PayPal" Content="PayPal" GroupName="PaymentMethod" />
+        <RadioButton Name="BankTransfer" Content="Transferencia" GroupName="PaymentMethod" />
+        <PasswordBox Name="PasswordBox" Margin="0,10" />
+        <Button Content="Realizar pago" Click="PayButton_Click" />
+    </StackPanel>-->
+</Window>
